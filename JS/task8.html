@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            .btn{
+                margin: 2px;
+                padding: 3px;
+            }
+            table, th, td{
+                border-collapse: collapse;
+            }
+            table{
+                margin-bottom: 15px;
+            }
+            td{
+                margin-left: 1px;
+            }
+            th{
+                width: 200px;
+            }
+            input[type="text"],
+            input[type="number"],
+            input[type="email"],
+            input[type="password"],
+            input[type="tel"],
+            textarea{
+                width: 500px;
+            }
+
+            form{
+                padding-left: 100px;
+                padding-top: 100px;
+                padding-bottom: 50px;
+                background: linear-gradient(45deg, #3498db, #8e44ad);
+
+            }
+
+            body{
+                background: linear-gradient(45deg, #3498db, #8e44ad);
+            }
+
+            .invalid-feedback{
+                font-weight: bold;
+                font-size: large;
+                color:#dc3545 !important;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <form class="row needs-validation was-validated" novalidate="">
+                <table>
+                    <tr>
+                        <th><label class="form-label me-5">First Name</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="text" required=""/>
+                        <div class="invalid-feedback">
+                            POOR
+                        </div></td>
+                    </tr>
+
+                    <tr>
+                        <th><label class="form-label me-5">Last Name</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="text" required/>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <th><label class="form-label me-5">Email</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="email" required/>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <th><label class="form-label me-5">Password</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="password" required/>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <th><label class="form-label me-5">Re-enter Password</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="password" required/>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <th rowspan="3"><label for="password">Gender:</label></th>
+                        <tr>
+                            <td colspan="4"><input type="radio" id="gender">Male</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><input type="radio" id="gender">Female</td>
+                        </tr>
+                    </tr>
+
+                     <tr>
+                        <th><label class="form-label me-5">Age:</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="number" required>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <th><label class="form-label me-5">Phone Number</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="number" required>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <th><label class="form-label me-5">Address</label></th>
+                        <td colspan="4"><textarea class="form-control rounded" type="text" style="height: 80px;" required></textarea>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label class="form-label me-5">State</label></th>
+                        <td colspan="4"><input class="form-control rounded" type="text" required/>
+                            <div class="invalid-feedback">
+                                POOR
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <th><label class="form-label me-5">Country</label></th>
+                        <td colspan="4">
+                            <select class="form-select">
+                                <option>Choose your country</option>
+                                <option>India</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                                <option>Japan</option>
+                                <option>United Kingdom</option>
+                                <option>Spain</option>
+                                <option>USA</option>
+                                <option>Argentina</option>
+                                <option>Mexico</option>
+                                <option>Russia</option>
+                                <option>Australia</option>
+                                <option>Greece</option>
+                            </select>
+                        </td>    
+                    </tr>
+
+                    <tr>
+                        <th><label for="lang">Languages known</label></th>
+                        <td><input type="checkbox" id="lang">English</td>
+                        <td><input type="checkbox" id="lang">Kannada</td>
+                        <td><input type="checkbox" id="lang">Hindi</td>
+                        <td><input type="checkbox" id="lang">Telugu</td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="5"><input type="checkbox" id="lang">Hereby I declare all the given details are true</td>
+                    </tr> 
+                    
+
+                    <tr>
+                        <td align="right" colspan="5">Log in to <a href="#" >Ethnus</a> website </td>
+                    </tr> 
+                    
+                </table>
+            </form> 
+            <button id="bt" class="btn btn-primary" style="background-color: red; color: white; padding-left: 25px; padding-right: 25px; border-radius: 20px;" type="submit">Register</button>
+  
+        </center>
+    </body>
+
+    <script>
+        (() => {
+      'use strict'
+    
+      const forms = document.querySelectorAll('.needs-validation')
+    
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+    
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+      </script>
+</html>

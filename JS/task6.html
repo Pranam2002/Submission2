@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://fontawesome.com/icons/lock?f=classic&s=solid&pc=%230a0a0a"></script>
+    <title>Instagram Login</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #fafafa;
+        }
+
+        .login-container {
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            background-color: #ded2d2e9;
+            border: 1px solid #e1e1e1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #e1e1e1;
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+
+        .input-container img {
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            flex: 1;
+            border: none;
+            outline: none;
+        }
+
+        .login-button {
+            background-color: #3897f0;
+            color: #fff;
+            padding: 10px 0;
+            border: none;
+            cursor: pointer;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        .login-button:hover {
+            background-color: #3578e8;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        /* Additional styles for links and text */
+        a {
+            text-decoration: none;
+            color: #3897f0;
+        }
+
+        .signup-text {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1><i>Instagram</i></h1>
+
+        <br>
+        
+        <div class="input-container">
+            <i style='font-size:12px' class='fas'>&#xf406;</i>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <br>
+
+        <div class="input-container">
+            <i style="font-size:24px" class="fa">&#xf023;</i>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <br>
+
+        <button class="login-button">Log In</button>
+
+        <br>
+
+        <div class="checkbox-container">
+            <label>
+                <input type="checkbox" name="remember"> Remember Me
+            </label>
+            <a href="#">Forgot Password?</a>
+        </div>
+        
+    </div>
+    <center>
+        <div class="signup-text">
+            Don't have an account? <a href="#">Sign up here</a>
+        </div>
+    </center>
+</body>
+</html>
